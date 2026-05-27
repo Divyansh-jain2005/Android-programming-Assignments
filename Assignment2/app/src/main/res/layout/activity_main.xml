@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+
+    android:orientation="vertical"
+
+
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_color"
+            app:titleTextColor="@color/white"
+            app:subtitleTextColor="@color/white"
+            app:title="Student Details.. "
+            app:subtitle="Welcome To The Form.."
+            android:id="@+id/appBar"
+
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Student Details"
+            android:textColor="@color/text_color"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp"
+            android:text="Name:-"
+            android:textColor="@color/text_color"
+            android:layout_marginRight="30dp"
+            />
+
+        <EditText
+            android:id="@+id/name"
+            android:pointerIcon="text"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_color"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:text="City:-"
+            android:layout_marginRight="60dp"
+            />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color"
+            android:text="Course:-"
+            android:layout_marginRight="20dp"
+            />
+
+        <EditText
+            android:id="@+id/course"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:text="Email:-"
+            android:layout_marginRight="28dp"
+            android:textColor="@color/text_color"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:pointerIcon="text"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/submit"
+        android:text="SUBMIT"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/btn_color"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:pointerIcon="hand"
+        android:gravity="center"
+        />
+</LinearLayout>

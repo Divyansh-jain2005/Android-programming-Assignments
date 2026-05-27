@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context=".MainActivity"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/na_bg"
+            app:titleTextColor="@color/white"
+            app:subtitleTextColor="@color/white"
+            app:title="WebView App"
+            app:subtitle="Developed By-Divyansh jain"
+            android:id="@+id/appBar"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Enter Your URL:-"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="230dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:id="@+id/url"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/na_bg"
+        android:text="Click Here"
+        android:textSize="20dp"
+        android:id="@+id/btn"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview"
+
+        />
+</LinearLayout>
